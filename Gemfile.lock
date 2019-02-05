@@ -239,6 +239,7 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.7)
       rack (>= 1.0)
+    protected_attributes
 
 PLATFORMS
   ruby
