@@ -5,14 +5,25 @@
 <!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
-  <title>Ipamaticss&#8217; &ndash; Tell Friends, We are willing to pay.</title>
-  <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-  <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Ipaymatics&#8217; &ndash; Tell Friends, We are willing to pay.</title>
+  <link rel="icon" href="<%= asset_path('logo.ico') %>" type="image/x-icon">
+  <link rel="shortcut icon" href="<%= asset_path('logo.ico') %>" type="image/x-icon">
 
   <meta property="og:title" content="Harry’s is coming!"/>
   <meta property="og:description" content="Shaving is evolving. Didn’t want to leave you all behind. Check out Harry’s here."/>
   <meta property="og:image" content="<%= asset_path("refer/truman.png") %>"/>
   <meta property="og:url" content="<%= root_url %>"/>
+  <title>LandGig</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:600" rel="stylesheet">
+    <link rel="stylesheet" href="<%= asset_path('bootstrap.min.css') %>">
+    <link rel="stylesheet" href="<%= asset_path('font-awesome.min.css') %>">
+    <link rel="stylesheet" href="<%= asset_path('style.css') %>">
+    <link rel="stylesheet" href="<%= asset_path('responsive.css') %>">
   <% if @is_mobile %>
     <% if @bodyId == 'home' %>
       <meta name="viewport" content="width=1600" />
@@ -27,6 +38,8 @@
 
 <%= yield %>
 
-
+<script src="<%= asset_path('jquery.min.js') %>"></script>
+    <script src="<%= asset_path('bootstrap.min.js') %>"></script>
+    <script src="<%= asset_path('scripts.js') %>"></script>
 </body>
 </html>
