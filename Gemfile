@@ -8,7 +8,7 @@ gem 'devise'
 gem 'pg'
 gem 'rails', '~> 4.2'
 gem 'unicorn'
-gem 'protected_attributes'
+gem 'protected_attributes', '~> 1.0.5'
 
 
 # Gems used only for assets and not required
